@@ -1,0 +1,103 @@
+Exo1
+
+1) Fait
+
+2) Le répertoire .git est crée
+
+3)Le fichier crée se nomme 'fichier_question_3'
+
+4) git status affiche le message suivant :
+
+"Sur la branche master
+
+Validation initiale
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	#git.txt#
+	.#git.txt
+	fichier_question_3
+	git.txt
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)"
+
+
+5) 
+On rentre dans la console :
+git add fichier_question_3
+git status
+
+On obtient comme message :
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+
+	nouveau fichier: fichier_question_3
+
+Le statut du fichier est donc "Modifications qui seront validées"
+
+
+6)Commande : git commit -m "Un super message" , entré dans la console
+
+7) 
+git status :
+ Le répertoire n'apparait plus dans la liste des fichiers qui vont être validé. Il s'agit donc d'un fichier traité locaclement.
+
+8) git log -p
+Cette commande affiche les informations relatives aux modifications apportées aux fichiers ajoutés par la commande git add, et par les messages écrit par la commande git commit -m
+La commande affiche :
+
+Author: RemiDeJesus <de.jesus.remi@gmail.com>
+Date:   Thu Jan 12 09:45:15 2017 +0100
+
+    un super message
+
+diff --git a/fichier_question_3 b/fichier_question_3
+new file mode 100644
+index 0000000..e69de29
+
+
+9) Modif effectuée.
+git diff affiche les différences 
+
+10) Fait
+
+11) Sur github.com, apparait le fichier_question_3, et la date du dernier commit et le message associé, l'auteur... etc.
+12) OK
+
+################################################################################################################################################################################################
+
+
+Exo 2:
+
+1) repertoire Exo_2
+
+2) Le réportoire ecrée est PremierPas
+
+3)git status retourne
+Sur la branche master
+Votre branche est à jour avec 'origin/master'.
+
+rien à valider, la copie de travail est propre
+
+4) Fait
+
+5) à 13) (essentiellement des manips)
+Message d'erreur lors du premier push
+Il faut d'abord pull (sert à recevoir les dernieres modifcations apportées par les autres user par un push)  avant de pouvoir push
+ 
+
+##############################################################################################################################################################################################
+
+
+Exo 3:
+
+
+voir Makefile dans le reportoire Exo_3
+
+
+
+##############################################################################################################################################################################################
+
+
+
